@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column; /* Garante que os itens fiquem empilhados */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: flex-start; /* Alinha os itens no topo da página */
+    padding: 20px; /* Espaço ao redor */
+}
+
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    overflow: hidden;
+    border-radius: 70px;
+}
+
+.carousel {
+    display: flex;
+    animation: slide 30s infinite;
+    
+}
+
+.carousel img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    scroll-snap-align: center;
+}
+@keyframes slide {
+    0% {
+        transform: translateX(0); /* Posição inicial */
+    }
+    0% {
+        transform: translateX(-100%); /* Posição inicial */
+        
+    }
+    
+   
+}   
+h1.primeiro {
+    text-align: center; /* Centraliza o texto horizontalmente */
+    font-size: 2em; /* Ajusta o tamanho da fonte */
+    margin-bottom: 70px; /* Espaçamento entre o título e o carrossel */
+    color: #333; /* Cor do texto */
+    font-family: Arial, sans-serif; /* Define a fonte */
+}
+
+h1.primeiro:hover{
+    color: blue;
+    font-size:2.2em
+}
+h1.texto1{
+    color: blue;
+    align-self: center;
+    font-size: 2em;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 12%;
+
+}
+a:hover {
+    background-color: #7357a1; /* Cor escura quando passa o mouse */
+    color: #e6d32a; /* Texto branco */
+}
+a.botao-voltar:hover{
+    font-size: 24px;
+    background-color: rgb(240, 78, 3);
+    transform: translateY(4px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.555)
+}
+a.botao-voltar{
+border-radius: 2px; /* Bordas arredondadas */
+font-size: 28px;
+text-decoration: none;
+padding-inline: 15%;
+background-color: #e6d32a;
+}
